@@ -29,12 +29,8 @@ PRODUCT_PACKAGES += \
     audio.r_submix.default \
     audio.usb.default \
     tinymix \
-    android.hardware.audio@6.0-impl \
-    android.hardware.audio.effect@6.0-impl \
-    android.hardware.audio.service \
-    audio.primary.default \
-    audio.sec_primary.default \
-    libtinycompress
+    android.hardware.audio@2.0-impl \
+    android.hardware.audio.effect@2.0-impl
 
 # Boot animation
 TARGET_BOOTANIMATION_PRELOAD := true
@@ -59,8 +55,8 @@ PRODUCT_PACKAGES += \
     AdvancedDisplay
 
 # Livedisplay
-PRODUCT_PACKAGES += \
-    vendor.lineage.livedisplay@2.0-service.samsung-exynos
+#PRODUCT_PACKAGES += \
+#    vendor.lineage.livedisplay@2.0-service.samsung-exynos
 
 # Graphics
 # Device uses high-density artwork where available
