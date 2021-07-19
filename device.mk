@@ -14,7 +14,7 @@
 # limitations under the License.
 #
 
-LOCAL_PATH := device/samsung/j1xlte
+LOCAL_PATH := device/samsung/on5ltetmo
 
 $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 
@@ -39,8 +39,8 @@ PRODUCT_PACKAGES += \
 # Boot animation
 TARGET_BOOTANIMATION_PRELOAD := true
 TARGET_BOOTANIMATION_TEXTURE_CACHE := true
-TARGET_SCREEN_HEIGHT := 800
-TARGET_SCREEN_WIDTH := 480
+TARGET_SCREEN_HEIGHT := 1280
+TARGET_SCREEN_WIDTH := 720
 
 # Bluetooth
 PRODUCT_COPY_FILES += \
@@ -64,10 +64,10 @@ PRODUCT_PACKAGES += \
 
 # Graphics
 # Device uses high-density artwork where available
-PRODUCT_AAPT_CONFIG := large
-PRODUCT_AAPT_PREF_CONFIG := hdpi
+PRODUCT_AAPT_CONFIG := large normal
+PRODUCT_AAPT_PREF_CONFIG := xhdpi
 # A list of dpis to select prebuilt apk, in precedence order.
-PRODUCT_AAPT_PREBUILT_DPI := hdpi xhdpi mdpi
+PRODUCT_AAPT_PREBUILT_DPI := xhdpi hdpi
 
 # HIDL Manifest
 PRODUCT_COPY_FILES += \
@@ -114,6 +114,7 @@ PRODUCT_COPY_FILES += \
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 
 # Vendor security patch level (vendor blobs from G550FYXXU1CRF1)
+# TODO: make sure this is correct
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.lineage.build.vendor_security_patch=2018-04-01
 
@@ -131,4 +132,4 @@ PRODUCT_COPY_FILES += \
 $(call inherit-product, device/samsung/universal3475-common/device-common.mk)
 
 # Call the proprietary setup
-$(call inherit-product, vendor/samsung/j1xlte/j1xlte-vendor.mk)
+$(call inherit-product, vendor/samsung/on5ltetmo/on5ltetmo-vendor.mk)

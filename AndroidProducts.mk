@@ -14,12 +14,12 @@
 # limitations under the License.
 #
 
-LOCAL_PATH := device/samsung/j1xlte
+LOCAL_PATH := device/samsung/on5ltetmo
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_PATH)/lineage_j1xlte.mk
+    $(LOCAL_PATH)/lineage_on5ltetmo.mk
 
 COMMON_LUNCH_CHOICES := \
-    lineage_j1xlte-user \
-    lineage_j1xlte-userdebug \
-    lineage_j1xlte-eng
+    lineage_on5ltetmo-user \
+    lineage_on5ltetmo-userdebug \
+    lineage_on5ltetmo-eng
