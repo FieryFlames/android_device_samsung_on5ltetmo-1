@@ -70,9 +70,9 @@ void vendor_load_properties()
     if (bootloader.find("G550T1") != std::string::npos) {
         /* SM-G550T1 on5ltemtr TODO: replace the fingerprints with the right ones */
         property_override_dual("ro.product.model", "ro.vendor.product.model", "SM-G550T1");
-        property_override_dual("ro.build.fingerprint", "ro.vendor.build.fingerprint", "samsung/j1xltejt/j1xlte:5.1.1/LMY47X/J120FXXU2AQH1:user/release-keys");
-        property_override("ro.system.build.fingerprint", "samsung/j1xltejt/j1xlte:5.1.1/LMY47X/J120FXXU2AQH1:user/release-keys");
-        property_override("ro.build.description", "j1xltejt-user 5.1.1 LMY47X J120FXXU2AQH1 release-keys");
+        property_override_dual("ro.build.fingerprint", "ro.vendor.build.fingerprint", "samsung/on5ltemtr/on5ltemtr:6.0.1/MMB29K/G550T1UVU2AQC4:user/release-keys");
+        property_override("ro.system.build.fingerprint", "samsung/on5ltemtr/on5ltemtr:6.0.1/MMB29K/G550T1UVU2AQC4:user/release-keys");
+        property_override("ro.build.description", "on5ltemtr-user 6.0.1 MMB29K G550T1UVU2AQC4 release-keys");
     }
 
     device = GetProperty("ro.product.device", "");
