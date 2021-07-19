@@ -204,7 +204,7 @@
     <integer translatable="false" name="config_brightness_ramp_rate_slow">80</integer>
 
     <!-- Enable OLED burn-in protection -->
-    <bool name="config_enableBurnInProtection">true</bool>
+    <bool name="config_enableBurnInProtection">false</bool>
 
     <!-- Boolean indicating if current platform supports BLE peripheral mode -->
     <bool name="config_bluetooth_le_peripheral_mode_supported">true</bool>
